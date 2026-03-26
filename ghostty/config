@@ -1,0 +1,9 @@
+# Send Ctrl+Space when pressing Cmd+p (for tmux prefix)
+keybind = super+p=text:\x00
+
+# Option+number for tmux window switching (sends ESC+number)
+keybind = alt+one=text:\x1b1
+keybind = alt+two=text:\x1b2
+keybind = alt+three=text:\x1b3
+keybind = alt+four=text:\x1b4
+keybind = alt+five=text:\x1b5

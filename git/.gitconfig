@@ -1,0 +1,14 @@
+[user]
+	name = Franccesco Orozco
+	email = franccesco@codingdose.info
+	signingkey = 95A4046E46151D26
+[core]
+	excludesfile = ~/.gitignore_global
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
