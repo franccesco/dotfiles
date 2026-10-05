@@ -12,6 +12,11 @@ fi
 
 # Now playing
 music=$("$HOME/.local/bin/now-playing.sh" 2>/dev/null)
+# Prefer Apple Music while it plays; otherwise show YouTube in Safari if any
+if [[ "$music" != "▶"* ]]; then
+    youtube=$("$HOME/.local/bin/youtube-now-playing.sh" 2>/dev/null)
+    [ -n "$youtube" ] && music="$youtube"
+fi
 if [ -n "$music" ]; then
     [ -n "$items" ] && items="${items} "
     items="${items}#[fg=#bb9af7]${music} #[fg=#3b4261]│"
