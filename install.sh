@@ -38,6 +38,14 @@ link "$DOTFILES/ghostty/config" "$HOME/.config/ghostty/config"
 # GitHub CLI
 link "$DOTFILES/gh/config.yml" "$HOME/.config/gh/config.yml"
 
+# Sublime Text
+SUBLIME_USER="$HOME/Library/Application Support/Sublime Text/Packages/User"
+link "$DOTFILES/sublime-text/Preferences.sublime-settings"              "$SUBLIME_USER/Preferences.sublime-settings"
+link "$DOTFILES/sublime-text/Package Control.sublime-settings"          "$SUBLIME_USER/Package Control.sublime-settings"
+link "$DOTFILES/sublime-text/ayu-dark.sublime-color-scheme"             "$SUBLIME_USER/ayu-dark.sublime-color-scheme"
+link "$DOTFILES/sublime-text/ayu-dark.sublime-color-scheme.backup"      "$SUBLIME_USER/ayu-dark.sublime-color-scheme.backup"
+link "$DOTFILES/sublime-text/ayu-mirage.sublime-color-scheme"           "$SUBLIME_USER/ayu-mirage.sublime-color-scheme"
+
 # Custom scripts
 mkdir -p "$HOME/.local/bin"
 for script in "$DOTFILES/scripts/"*.sh; do

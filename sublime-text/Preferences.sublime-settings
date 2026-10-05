@@ -1,0 +1,26 @@
+{
+	"font_size": 12,
+	"font_face": "Monolisa Semibold",
+
+
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"detect_indentation": true,
+	"trim_trailing_white_space_on_save": true,
+	"ensure_newline_at_eof_on_save": true,
+
+	"preview_on_click": true,
+	"open_files_in_new_window": "never",
+	"hot_exit": false,
+	"remember_open_files": false,
+	"show_encoding": true,
+	"show_line_endings": true,
+
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
+	"theme": "ayu-mirage.sublime-theme",
+}
